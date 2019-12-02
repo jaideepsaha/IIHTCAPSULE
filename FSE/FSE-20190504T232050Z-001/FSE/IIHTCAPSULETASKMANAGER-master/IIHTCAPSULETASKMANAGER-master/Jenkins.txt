@@ -1,0 +1,131 @@
+Started by user SHUBHODEEP SEN
+Running as SYSTEM
+Building in workspace C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp
+No credentials specified
+> git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+> git.exe config remote.origin.url https://github.com/shuenen/IIHTCAPSULETASKMANAGER.git # timeout=10
+Fetching upstream changes from https://github.com/shuenen/IIHTCAPSULETASKMANAGER.git
+> git.exe --version # timeout=10
+> git.exe fetch --tags --force --progress https://github.com/shuenen/IIHTCAPSULETASKMANAGER.git +refs/heads/*:refs/remotes/origin/*
+> git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+> git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 4cd2c003afc6f5da573c8305a66b51a1865d146b (refs/remotes/origin/master)
+> git.exe config core.sparsecheckout # timeout=10
+> git.exe checkout -f 4cd2c003afc6f5da573c8305a66b51a1865d146b
+Commit message: "npm fix"
+> git.exe rev-list --no-walk 4cd2c003afc6f5da573c8305a66b51a1865d146b # timeout=10
+[TaskApp] $ cmd /c call C:\WINDOWS\TEMP\jenkins2167854021631696401.bat
+
+C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp>cd client
+
+C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\client>call npm install
+npm WARN ajv-keywords@3.2.0 requires a peer of ajv@^6.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+audited 14047 packages in 8.699s
+found 209 vulnerabilities (5 low, 23 moderate, 181 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> angular-app-with-api@0.0.0 ng C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\client
+> ng "build"
+
+[0mDate: [1m [37m2019-08-24T03:37:27.990Z [39m [22m [0m
+[0mHash: [1m [37m068205ced744a0b92049 [39m [22m [0m
+[0mTime: [1m [37m5820 [39m [22mms [0m
+[0mchunk { [1m [33minline [39m [22m} [1m [32minline.bundle.js, inline.bundle.js.map [39m [22m (inline) 5.83 kB [1m [33m[entry] [39m [22m [1m [32m [rendered] [39m [22m [0m
+[0mchunk { [1m [33mmain [39m [22m} [1m [32mmain.bundle.js, main.bundle.js.map [39m [22m (main) 32.8 kB [1m [33m[initial] [39m [22m [1m [32m [rendered] [39m [22m [0m
+[0mchunk { [1m [33mpolyfills [39m [22m} [1m [32mpolyfills.bundle.js, polyfills.bundle.js.map [39m [22m (polyfills) 203 kB [1m [33m[initial] [39m [22m [1m [32m [rendered] [39m [22m [0m
+[0mchunk { [1m [33mstyles [39m [22m} [1m [32mstyles.bundle.js, styles.bundle.js.map [39m [22m (styles) 11.4 kB [1m [33m[initial] [39m [22m [1m [32m [rendered] [39m [22m [0m
+[0mchunk { [1m [33mvendor [39m [22m} [1m [32mvendor.bundle.js, vendor.bundle.js.map [39m [22m (vendor) 3.22 MB [1m [33m[initial] [39m [22m [1m [32m [rendered] [39m [22m [0m
+Path To MSBuild.exe: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe
+Executing the command cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe" /p:Configuration=Release /p:Platform=AnyCPU %WORKSPACE%\server\TaskWebAPI\TaskWebAPI.csproj " && exit %%ERRORLEVEL%% from C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp
+[TaskApp] $ cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe" /p:Configuration=Release /p:Platform=AnyCPU %WORKSPACE%\server\TaskWebAPI\TaskWebAPI.csproj " && exit %%ERRORLEVEL%%
+Active code page: 1252
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/23/2019 10:37:28 PM.
+Project "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskWebAPI\TaskWebAPI.csproj" on node 1 (default targets).
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+Skipping target "EntityDeployEmbeddedResources" because all output files are up-to-date with respect to the input files.
+Project "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskWebAPI\TaskWebAPI.csproj" (1) is building "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\TaskBL.csproj" (2:2) on node 1 (default targets).
+Project "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\TaskBL.csproj" (2:2) is building "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\TaskDL.csproj" (3:3) on node 1 (default targets).
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+Skipping target "EntityDeployEmbeddedResources" because all output files are up-to-date with respect to the input files.
+GenerateBindingRedirects:
+  No suggested binding redirects from ResolveAssemblyReferences.
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\NBench.1.2.2\lib\net452\NBench.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Runtime.Serialization.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Security.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" /debug+ /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\TaskDL.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /resource:obj\Release\edmxResourcesToEmbed\TaskModel.csdl,TaskModel.csdl /resource:obj\Release\edmxResourcesToEmbed\TaskModel.msl,TaskModel.msl /resource:obj\Release\edmxResourcesToEmbed\TaskModel.ssdl,TaskModel.ssdl /target:library /utf8output /deterministic+ Class1.cs ParentTask.cs Properties\AssemblyInfo.cs TaskDetail.cs TaskModel1.Context.cs TaskModel1.cs TaskModel.Designer.cs TaskParentDetail.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn
+_CopyFilesMarkedCopyLocal:
+  Touching "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\obj\Release\TaskDL.csproj.CopyComplete".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\TaskDL.dll" to "bin\Release\TaskDL.dll".
+  TaskDL -> C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\bin\Release\TaskDL.dll
+  Copying file from "obj\Release\TaskDL.pdb" to "bin\Release\TaskDL.pdb".
+Done Building Project "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\TaskDL.csproj" (default targets).
+GenerateBindingRedirects:
+  No suggested binding redirects from ResolveAssemblyReferences.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\NBench.1.2.2\lib\net452\NBench.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\bin\Release\TaskDL.dll /debug+ /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\TaskBL.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /target:library /utf8output /deterministic+ TaskBusiness.cs Properties\AssemblyInfo.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\bin\Release\TaskDL.dll" to "bin\Release\TaskDL.dll".
+  Copying file from "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\bin\Release\TaskDL.pdb" to "bin\Release\TaskDL.pdb".
+  Touching "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\obj\Release\TaskBL.csproj.CopyComplete".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\TaskBL.dll" to "bin\Release\TaskBL.dll".
+  TaskBL -> C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\bin\Release\TaskBL.dll
+  Copying file from "obj\Release\TaskBL.pdb" to "bin\Release\TaskBL.pdb".
+Done Building Project "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\TaskBL.csproj" (default targets).
+GenerateBindingRedirects:
+  No suggested binding redirects from ResolveAssemblyReferences.
+PreComputeCompileTypeScript:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\x86\node.exe "C:\Program Files (x86)\Microsoft SDKs\TypeScript\3.4\tsc.js"   --sourcemap --target ES5 --noEmitOnError --listEmittedFiles "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskWebAPI\Scripts\index.d.ts"
+CompileTypeScript:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\x86\node.exe "C:\Program Files (x86)\Microsoft SDKs\TypeScript\3.4\tsc.js"   --sourcemap --target ES5 --noEmitOnError --listEmittedFiles "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskWebAPI\Scripts\index.d.ts"
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.5\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\NBench.1.2.2\lib\net452\NBench.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.WebRequest.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Runtime.Serialization.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Security.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Abstractions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.ApplicationServices.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Entity.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Routing.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\bin\Release\TaskBL.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\bin\Release\TaskDL.dll /reference:C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\packages\WebGrease.1.6.0\lib\WebGrease.dll /debug+ /debug:pdbonly /optimize+ /out:obj\Release\TaskWebAPI.dll /ruleset:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\\Rule Sets\MinimumRecommendedRules.ruleset" /subsystemversion:6.00 /resource:obj\Release\edmxResourcesToEmbed\Models\CapsuleModel.csdl,Models.CapsuleModel.csdl /resource:obj\Release\edmxResourcesToEmbed\Models\CapsuleNew.csdl,Models.CapsuleNew.csdl /resource:obj\Release\edmxResourcesToEmbed\Models\CapsuleModel.msl,Models.CapsuleModel.msl /resource:obj\Release\edmxResourcesToEmbed\Models\CapsuleNew.msl,Models.CapsuleNew.msl /resource:obj\Release\edmxResourcesToEmbed\Models\CapsuleModel.ssdl,Models.CapsuleModel.ssdl /resource:obj\Release\edmxResourcesToEmbed\Models\CapsuleNew.ssdl,Models.CapsuleNew.ssdl /target:library /utf8output App_Start\BundleConfig.cs App_Start\FilterConfig.cs App_Start\RouteConfig.cs App_Start\WebApiConfig.cs Areas\HelpPage\ApiDescriptionExtensions.cs Areas\HelpPage\App_Start\HelpPageConfig.cs Areas\HelpPage\Controllers\HelpController.cs Areas\HelpPage\HelpPageAreaRegistration.cs Areas\HelpPage\HelpPageConfigurationExtensions.cs Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs Areas\HelpPage\ModelDescriptions\ModelDescription.cs Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs Areas\HelpPage\ModelDescriptions\ParameterDescription.cs Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs Areas\HelpPage\Models\HelpPageApiModel.cs Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs Areas\HelpPage\SampleGeneration\ImageSample.cs Areas\HelpPage\SampleGeneration\InvalidSample.cs Areas\HelpPage\SampleGeneration\ObjectGenerator.cs Areas\HelpPage\SampleGeneration\SampleDirection.cs Areas\HelpPage\SampleGeneration\TextSample.cs Areas\HelpPage\XmlDocumentationProvider.cs Controllers\HomeController.cs Controllers\TaskController.cs Controllers\TaskDetailController.cs Controllers\TaskDetailNewController.cs Controllers\ValuesController.cs Global.asax.cs Models\CapsuleModel.Context.cs Models\CapsuleModel.cs Models\CapsuleModel.Designer.cs Models\CapsuleNew.Context.cs Models\CapsuleNew.cs Models\CapsuleNew.Designer.cs Models\ParentTask.cs Models\TaskDetail.cs Properties\AssemblyInfo.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+  Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\bin\Release\TaskBL.dll" to "bin\TaskBL.dll".
+  Copying file from "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\bin\Release\TaskDL.dll" to "bin\TaskDL.dll".
+  Copying file from "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskBL\bin\Release\TaskBL.pdb" to "bin\TaskBL.pdb".
+  Copying file from "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskDL\bin\Release\TaskDL.pdb" to "bin\TaskDL.pdb".
+  Touching "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskWebAPI\obj\Release\TaskWebAPI.csproj.CopyComplete".
+GetTypeScriptCopyToOutputDirectoryItems:
+  Adding items with BuildAction=TypeScriptCompile to the same collections that will be populated (with items of other BuildActions) by the GetCopyToOutputDirectoryItems target
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\TaskWebAPI.dll" to "bin\TaskWebAPI.dll".
+  TaskWebAPI -> C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskWebAPI\bin\TaskWebAPI.dll
+  Copying file from "obj\Release\TaskWebAPI.pdb" to "bin\TaskWebAPI.pdb".
+Done Building Project "C:\Users\Shubhodeep\source\Jenkins\workspace\TaskApp\server\TaskWebAPI\TaskWebAPI.csproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.99
+Finished: SUCCESS
